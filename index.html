@@ -4,6 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tareas</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Mis Tareas" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Mis tareas</h1>
+    </header>
+    <main>
+      <form>
+        <ul>
+          <li>
+            <label for="new">Nueva tarea:</label>
+            <input
+              id="new"
+              type="text"
+              maxlength="20"
+              minlength="4"
+              name="new"
+              required
+            />
+          </li>
+          <li>
+            <input type="checkbox" name="important" id="important" />
+            <label for="important">Importane</label>
+          </li>
+          <li>
+            <button>Añadir</button>
+          </li>
+        </ul>
+      </form>
+
+      <ul id="listaTareas">
+        <!-- <li>
+          <input type="checkbox" />
+          <h2>Tarea</h2>
+          <p class="date">17/01/2025</p>
+        </li>
+        <li class="important">
+          <input type="checkbox" />
+          <h2>Tarea importante</h2>
+          <p class="date">17/01/2025</p>
+        </li>
+        <li class="done">
+          <input type="checkbox" />
+          <h2>Tarea</h2>
+          <p class="date">17/01/2025</p>
+        </li> -->
+      </ul>
+
+      <menu>
+        <li>
+          <button id="limpiar">Limpiar</button>
+        </li>
+        <li>
+          <button id="borrar">Borrar todo</button>
+        </li>
+      </menu>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
