@@ -9,3 +9,8 @@ h2 {
 .done h2 {
   text-decoration: line-through;
 }
+
+header {
+  background-color: black;
+  color: white;
+}
